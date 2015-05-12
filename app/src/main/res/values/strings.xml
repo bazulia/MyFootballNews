@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Новости</string>
+    <string name="news_title">Новости</string>
+    <string name="match_title">Матч</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1597510173450302/9705229877</string>
+    
+    <string name="menuitem_refresh">Refresh</string>
+
+
+    <string-array name="list_drawer_titles">
+        <item>Новости</item>
+        <item>Украина</item>
+        <item>Англия</item>
+        <item>Аргентина</item>
+        <item>Бразилия</item>
+        <item>Германия</item>
+        <item>Испания</item>
+        <item>Италия</item>
+        <item>Нидерланды</item>
+        <item>Португалия</item>
+        <item>Турция</item>
+        <item>Франция</item>
+        <item>4-4-2</item>
+        <item>Бизнес и Финансы</item>
+        <item>Бей-беги</item>
+        <item>Другой футбол</item>
+        <item>Испанский связной</item>
+        <item>Calcio dello Stivale</item>
+        <item>Ретро футбол</item>
+        <item>Своя рубашка</item>
+        <item>Скаут</item>
+        <item>Третий тайм</item>
+        <item>Чтиво</item>
+    </string-array>
+
+    <string-array name="list_drawer_links">
+        <item>http://football.ua</item>
+        <item>http://football.ua/ukraine.html</item>
+        <item>http://football.ua/england.html</item>
+        <item>http://football.ua/argentina.html</item>
+        <item>http://football.ua/brazil.html</item>
+        <item>http://football.ua/germany.html</item>
+        <item>http://football.ua/spain.html</item>
+        <item>http://football.ua/italy.html</item>
+        <item>http://football.ua/netherlands.html</item>
+        <item>http://football.ua/portugal.html</item>
+        <item>http://football.ua/turkey.html</item>
+        <item>http://football.ua/france.html</item>
+        <item>http://football.ua/4-4-2/articles.html</item>
+        <item>http://football.ua/finance.html</item>
+        <item>http://football.ua/british/history.html</item>
+        <item>http://football.ua/otherfootball/africa.html</item>
+        <item>http://football.ua/spanish_messenger.html</item>
+        <item>http://football.ua/calciodellostivale/apenninitracciare.html</item>
+        <item>http://football.ua/retro.html</item>
+        <item>http://football.ua/ownshirt/teams.html</item>
+        <item>http://football.ua/scout.html</item>
+        <item>http://football.ua/thirdhalf.html</item>
+        <item>http://football.ua/fiction.html</item>
+
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

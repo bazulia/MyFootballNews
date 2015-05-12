@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/result_layout_item">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:id="@+id/tvNo"
+        android:clickable="false" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:id="@+id/imgEmblem"
+        android:clickable="false" />
+    <TextView
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ClubName"
+        android:id="@+id/tvName"
+        android:clickable="false" />
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="G"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:id="@+id/tvGames"
+        android:clickable="false" />
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:id="@+id/tvPoints"
+        android:clickable="false" />
+
+</LinearLayout>

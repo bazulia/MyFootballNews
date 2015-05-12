@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/relLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/pbMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgTeamLeft"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/darker_gray"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:padding="0dp">
+
+                        <TextView
+                            android:id="@+id/tvScoreLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="-"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/tvScoreNull"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=":"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/tvScoreRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="-"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgTeamRight"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvTeamNameLeft"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Some team left"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTeamNameRight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="10dp"
+                        android:text="Some team right"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDetailsMatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linGoals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#188a19"
+                        android:orientation="horizontal"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp">
+
+                        <TextView
+                            android:id="@+id/tvGoals"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="9"
+                            android:text="Голы"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/imgGoalsPointer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_action_expand" />
+
+                    </LinearLayout>
+
+
+                    <ListView
+                        android:id="@+id/lvGoals"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearWarningsAndTranslation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linWarnings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#188a19"
+                            android:orientation="horizontal"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp">
+
+                            <TextView
+                                android:id="@+id/tvWarnings"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-light"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="9"
+                                android:text="Предупреждения"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/imgWarningsPointer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_action_expand" />
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/lvWarnings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/linTranslation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#188a19"
+                            android:orientation="horizontal"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp">
+
+                            <TextView
+                                android:id="@+id/tvTranslation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-light"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="9"
+                                android:text="Текстовая трансляция"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/imgTranslationPointer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_action_expand" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llTranslation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSostavMainTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSostavLeftTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMainLineupLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/tvSubLineupLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tvSostavRightTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMainLineupRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/tvSubLineupRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+        </ScrollView>
+        <!--Connection no responce-->
+
+        <RelativeLayout
+            android:id="@+id/layoutNoResponce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="подключения истекло."
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Время ожидания"
+                android:id="@+id/textView4"
+                android:layout_marginTop="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Повторить"
+                android:id="@+id/btnRepeatResponce"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layoutNoConnection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="повториите попытку."
+                android:id="@+id/textView"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Проверьте подключение и"
+                android:id="@+id/textView2"
+                android:layout_marginTop="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Повторить"
+                android:id="@+id/btnRepeat"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>
